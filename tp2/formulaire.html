@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="formulaire.js"></script>
+<link rel="stylesheet" href="formulaire.css" />
+	<title>ma fiche</title>
+</head>
+<body>
+<h1> Saisie d'une fiche "Personne" </h1>
+<fieldset>
+<legend> Vos cordonnées</legend>
+<form method="post" action="formulaire.js">
+<table width="100%" border="0">
+<tr>
+<p>
+<td width="25%"> <label for="Nom">Nom </label></td>
+<td width="75%"> <input type="text" name="Nom" id="Nom"></td>
+</p>
+</tr>
+<tr>
+<p>
+<td width="25%"><label for="Prénom">Prénom </label> </td>
+<td width="75%"><input type="text" name="Prénom" id="Prénom"></td>
+</p>
+</tr>
+<tr>
+<p>
+<td width="25%"><label for="Date de naissance">Date de naissance</label></td>
+<td width="75%"><input placeholder="JJ/MM/AAAA" ="" name="Date de naissance" id="Date de naissance"></td>
+</p>
+</tr>
+<tr>
+<p>
+<td width="25%"><label for="Adresse">Adresse </label></td>
+<td width="75%"><input type="text" name="Adresse" id="Adresse"></td>
+</p>
+</tr>
+<tr>
+<p>
+<td width="25%"><label for="Tel">Tel </label></td>
+<td width="75%"><input type="tel" name="tel" id="Tel"></td>
+</p>
+</tr>
+<tr>
+<p>
+<td width="25%"><label for="Mail">Mail </label></td>
+<td width="75%"><input type="email" name="Mail" id="Mail"></td>
+</p>
+</tr>
+</fieldset>
+<tr>
+<p>
+<td width="25%"></td>
+<td width="75%"> <input type="button" value="valider" onclick="validation();"> </td>
+</p>
+</tr>
+</table>
+</form>	
+<br>
+<div id="error" ></div>
+<div id="resultat"></div>
+
+</body>
+</html>
